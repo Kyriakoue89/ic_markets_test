@@ -4,3 +4,21 @@
   -o-transition: $property $duration $function;
   transition: $property $duration $function;
 }
+
+@mixin border_radius($val){
+  border-radius:$val;
+  -webkit-border-radius:$val;
+  -moz-border-radius:$val;
+}
+
+@mixin opacity($val){
+  opacity:$val;
+  -webkit-opacity:$val;
+  -moz-opacity:$val;
+}
+
+@mixin hover_opacity($val){
+  opacity:$val;
+  -webkit-opacity:$val;
+  -moz-opacity:$val;
+}

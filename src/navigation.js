@@ -3,6 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Button } from 'react-bootstrap';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Login } from "./Login"
+import { Register } from "./Register";
+
+
 
 
 function NavigationContainer() {
@@ -19,6 +24,13 @@ function NavigationContainer() {
 
                     </Nav>
                     <Nav>
+				<BrowserRouter>
+        			<Routes>
+  	  					<Route path="/login">
+            				
+         	 			</Route>
+      				</Routes>
+      			</BrowserRouter>
                         <Nav.Link href="#deets">Login</Nav.Link>
                         <Button variant="outline-success">Search</Button>
                     </Nav>

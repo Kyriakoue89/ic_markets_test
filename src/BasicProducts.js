@@ -15,7 +15,7 @@ export const BasicProducts = () => {
                                           short_description = {data.short_description}
                                           image = {data.image}
                                           price = {data.price}
-                                          link = {data.link}
+                                          brand = {data.brand}
                                           />
                     );
                 })}
@@ -26,14 +26,17 @@ export const BasicProducts = () => {
     );
 };
 
-const BasicProductData = ({title,short_description,link, image, price}) => {
+const BasicProductData = ({title,short_description,brand,image, price}) => {
     return (
-        <div className="col-sm-4">
-            {image}
-            {title}
-            {short_description}
-            {link}
-            {price}
+        <div className="col-sm-3">
+            <img src={image} className="thubmnail" alt={title}/>
+			<div className="products-info">
+            	<h2 className="product-title">{title}</h2>
+            	<p className="product-description">{short_description}</p>
+            	<p className="product-brand"><span>Brand:</span> {brand}</p>
+            	<p className="product-price"><span>Price:</span>{price}</p>
+				<a className="product-link" href="#linktoproduct">Learn more</a>
+			</div>
         </div>
     );
 };

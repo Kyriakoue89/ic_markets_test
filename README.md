@@ -6,6 +6,7 @@ nvm use 14.15.5
 ### Install sass for stylesheet
 npm i sass --save-dev
 npm install sass
+npm install react-router-dom
 
 ### Create app and start it
 npx create-react-app icmarkets-test

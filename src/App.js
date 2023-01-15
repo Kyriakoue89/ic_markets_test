@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import './App.css';
-import './navigation.scss';
-import NavigationContainer from "./navigation";
-import { BasicProducts } from "./BasicProducts";
-import { PremiumProducts } from "./PremiumProducts";
-import { Login } from "./Login"
-import { Register } from "./Register";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+import NavigationContainer from "./components/NavigationBar";
+import { Login } from "./components/Login"
+import { Register } from "./components/Register";
+import { BasicProducts } from "./components/BasicProducts";
+import { PremiumProducts } from "./components/PremiumProducts";
+
+import './App.scss';
 import { Button }  from 'react-bootstrap';
 
 function App() {

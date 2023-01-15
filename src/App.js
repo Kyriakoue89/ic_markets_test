@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Navigate, Route } from 'react-router-dom'
 
-import NavigationContainer from "./components/NavigationBar";
-import { Login } from "./components/Login"
-import { Register } from "./components/Register";
-import { BasicProducts } from "./components/BasicProducts";
-import { PremiumProducts } from "./components/PremiumProducts";
+import NavigationContainer from "./components/Menu/NavigationBar";
+import { BasicProducts } from "./components/Products/BasicProducts";
+import { PremiumProducts } from "./components/Products/PremiumProducts";
+import { Login } from "./components/Login/Login"
+import { Register } from "./components/Register/Register";
+
 
 import './App.scss';
 import { Button }  from 'react-bootstrap';

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Navigate, Route } from 'react-router-dom'
 
 import NavigationContainer from "./components/Menu/NavigationBar";
 import { BasicProducts } from "./components/Products/BasicProducts";
@@ -31,7 +30,7 @@ function App() {
 					<div className="col-sm-12">
 						<h3>Unlock Premium products</h3>
 						<p>Create and account with us to be able to see all of our products</p>
-						<Button className="btn-success">Register</Button>
+					
 					</div>
 				</div>
 			</div>

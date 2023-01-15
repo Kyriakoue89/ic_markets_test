@@ -29,7 +29,7 @@ export const Login = (props) => {
                 <Form.Control size="sm" value={pass} onChange={(e) => setPass(e.target.value)}  type="password" id="password" placeholder="Password"/>
             </Form.Group>
             <Form.Group className="mb-2">
-                <Button type="submit" className="btn-success">Login In</Button>
+                <button type="submit" className="btn-success">Login In</button>
             </Form.Group>
 		</Form>
 				</div>

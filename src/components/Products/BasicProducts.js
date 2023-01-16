@@ -27,7 +27,7 @@ export const BasicProducts = () => {
 
 const BasicProductData = ({title,short_description,brand,image, price}) => {
     return (
-        <div className="col-sm-3">
+        <div className="col-sm-6 col-md-6 col-lg-3">
             <img src={image} className="thubmnail" alt={title}/>
 			<div className="products-info">
             	<h2 className="product-title">{title}</h2>

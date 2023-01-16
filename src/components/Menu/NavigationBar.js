@@ -22,7 +22,7 @@ function NavigationContainer() {
 
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">Login</Nav.Link>
+                        <Nav.Link href="/login">Login</Nav.Link>
                         <Button variant="outline-success">Search</Button>
                     </Nav>
                 </Navbar.Collapse>

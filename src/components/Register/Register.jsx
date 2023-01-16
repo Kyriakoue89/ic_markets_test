@@ -8,7 +8,7 @@ export const Register = (props) => {
     const [name, setName] = useState ('');
     const [surname, setSurname] = useState ('');
 
-    const handeSumbit = (e) => {
+    const handleSumbit = (e) => {
         // we need to use it cz otherwise will reload and loose our state
         e.preventDefault();
         console.log(email);
@@ -21,7 +21,7 @@ export const Register = (props) => {
             <div className="col-sm-6"><h3>Register</h3></div>
             <div className="col-sm-6 text-end"><a href="" onClick={() => props.onFormSwitch('login')} className="login-regster-link">Already have account? Login here</a></div>
         </div>
-        <Form onSubmit={handeSumbit}>
+        <Form onSubmit={handleSumbit}>
             <Form.Group className="mb-2">
                 <Form.Label>First Name</Form.Label>
                 <Form.Control size="sm" value={name} onChange={(e) => setName(e.target.value)} type="text" id="name" placeholder="Name"/>

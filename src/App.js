@@ -1,51 +1,18 @@
-import React, { useState } from "react";
 
-import NavigationContainer from "./components/Menu/NavigationBar";
-import { BasicProducts } from "./components/Products/BasicProducts";
-import { PremiumProducts } from "./components/Products/PremiumProducts";
-import { Login } from "./components/Login/Login"
-import { Register } from "./components/Register/Register";
-
-
-import './App.scss';
-import { Button }  from 'react-bootstrap';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Home } from "./components/Home/Home"
 
 function App() {
-
-    const [currentForm, setCurrentForm] = useState('login');
-
-    const toggleForm = (formName) => {
-        setCurrentForm(formName);
-    }
-    return (
-      <div>
-          <NavigationContainer/>
-			<div className="container">
-				<BasicProducts/>
-			</div>
-		<div className="container">
-		{ currentForm === "login" ? 
-			<div className="promoBanner">
-				<div className="row text-center">
-					<div className="col-sm-12">
-						<h3>Unlock Premium products</h3>
-						<p>Create and account with us to be able to see all of our products</p>
-					
-					</div>
-				</div>
-			</div>
-		: 
-				<PremiumProducts/>
-			
-		}
-	</div>
-          
-          {
-              currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-          }
-      </div>
-
-  );
+	return  <Home />;
 }
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Home />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
 export default App;

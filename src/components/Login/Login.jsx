@@ -5,7 +5,7 @@ export const Login = (props) => {
     const [email, setEmail] = useState ('');
     const [pass, setPass] = useState ('');
 
-    const handeSumbit = (e) => {
+    const handleSumbit = (e) => {
         // Prevent page reload
         e.preventDefault();
         console.log(email);
@@ -19,7 +19,7 @@ export const Login = (props) => {
             <div className="col-sm-6 text-end"><a href="" onClick={() => props.onFormSwitch('register')} className="login-regster-link">Already have account? Login here</a></div>
         </div>
 
-        <Form onSubmit={handeSumbit}>
+        <Form onSubmit={handleSumbit}>
             <Form.Group className="mb-2">
                 <Form.Label>Email</Form.Label>
                 <Form.Control size="sm" value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" placeholder="Email"/>

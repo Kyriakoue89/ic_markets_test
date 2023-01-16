@@ -46,9 +46,10 @@
 	color:#33E828;
 }
 .promoBanner {
-	background:url('./images/promoBanner.png') no-repeat;
-	width:1300px;
-	height:361px;
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(39,126,35,1) 100%);
+	width:100%;
+	min-height:300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
